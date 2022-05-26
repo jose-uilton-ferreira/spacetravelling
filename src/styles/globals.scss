@@ -4,4 +4,41 @@
   padding: 0;
 }
 
-// TODO
+:root {
+  --pink-500: #FF57B2;
+  
+  --gray-100: #F8F8F8;
+  --gray-200: #D7D7D7;
+  --gray-300: #BBBBBB;
+  --gray-800: #1A1D23;
+}
+
+html {
+  font-size: 16px;
+
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  color: var(--gray-200);
+  background: var(--gray-800);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

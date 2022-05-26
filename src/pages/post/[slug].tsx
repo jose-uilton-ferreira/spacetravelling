@@ -81,7 +81,7 @@ export default function Post({ post }: PostProps): JSX.Element {
         <Header />
 
         <div className={styles.banner}>
-          <img src="/banner.png" alt="Banner" />
+          <img src={postFormatted.data.banner.url} alt="Banner" />
         </div>
 
         <main className={commonStyles.container}>
